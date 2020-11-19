@@ -1,0 +1,49 @@
+{
+    "configurations": [
+        {
+            "type": "aws-sam",
+            "request": "direct-invoke",
+            "name": "Code:scrappers.proxy.sleep (python3.8)",
+            "invokeTarget": {
+                "target": "code",
+                "projectRoot": "",
+                "lambdaHandler": "scrappers.proxy.sleep"
+            },
+            "lambda": {
+                "runtime": "python3.8",
+                "payload": {},
+                "environmentVariables": {}
+            }
+        },
+        {
+            "type": "aws-sam",
+            "request": "direct-invoke",
+            "name": "Code:nofluffjobs.com.main.Pool (python3.7)",
+            "invokeTarget": {
+                "target": "code",
+                "projectRoot": "",
+                "lambdaHandler": "nofluffjobs.com.main.Pool"
+            },
+            "lambda": {
+                "runtime": "python3.7",
+                "payload": {},
+                "environmentVariables": {}
+            }
+        },
+        {
+            "type": "aws-sam",
+            "request": "direct-invoke",
+            "name": "Code:nofluffjobs.com.main.get (python3.8)",
+            "invokeTarget": {
+                "target": "code",
+                "projectRoot": "",
+                "lambdaHandler": "nofluffjobs.com.main.get"
+            },
+            "lambda": {
+                "runtime": "python3.8",
+                "payload": {},
+                "environmentVariables": {}
+            }
+        }
+    ]
+}
